@@ -12,7 +12,7 @@
 var $ = window.jQuery;
 
 function showThemeInfo() {
-    $('body').append('<div id="wp-no-themeinfo" style="position: fixed; right: 0px; bottom:0; background: #aa0000; color: #ffffff; line-height:20px; padding: 0 10px; font-size: 11px; font-family: arial, helvetica; border-top: solid 1px #000000; border-left: solid 1px #000000; box-shadow: -1px -1px 0 #ffffff; z-index: 999999;">Not a self-hosted WordPress site or theme can not be detected.</div>');
+    $('body').append('<div id="wp-no-themeinfo" style="position: fixed; right: 0px; bottom:0; background: #016087; color: #ffffff; line-height:20px; padding: 0 10px; font-size: 11px; font-family: arial, helvetica; border-top: solid 1px #000000; border-left: solid 1px #000000; box-shadow: -1px -1px 0 #ffffff; z-index: 999999;"><strong>Not a self-hosted WordPress site or theme can not be detected.</strong></div>');
 
     $('link').each(function(link) {
         var linkHref = $(this).attr('href')
