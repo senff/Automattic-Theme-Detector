@@ -23,7 +23,7 @@ function showThemeInfo() {
             var endSlash = themeSplit.indexOf('/'); // position of the first slash (right after the theme name)
             var themeName = themeSplit.substring(0,endSlash);
             var styleLoc = themePath+themeName+'/style.css';
-            if((!$('#wp-themeinfo').length) && (!themeName == 'assets')) { // if themename is "assets", it's not likely a WP site
+            if((!$('#wp-themeinfo').length) && (themeName != 'assets')) { // if themename is "assets", it's not likely a WP site
                 $('#wp-no-themeinfo').remove();
                $('body').append('<div id="wp-themeinfo" style="position: fixed; right: 0px; bottom:0; padding: 0 10px; line-height: 20px; font-size: 12px; font-family: arial, helvetica; color: #ffffff; background: #016087; border-left: solid 1px #000000; border-top: solid 1px #000000; box-shadow: -1px -1px 0 #ffffff; z-index: 999999;">Theme name: <strong style="text-transform: capitalize">'+themeName+'</strong> - <a href="'+styleLoc+'" target="_blank" style="color:#ffffff; text-decoration: underline;">link to style.css</a>');
             }
