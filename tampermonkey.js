@@ -5,7 +5,7 @@
 // @description  Shows the theme name in a non-WPcom site
 // @author       Senff
 // @require      https://code.jquery.com/jquery-1.12.4.js
-// @match        *
+// @match        *://*/*
 // @grant        none
 // ==/UserScript==
 
