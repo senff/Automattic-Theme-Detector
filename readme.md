@@ -1,6 +1,6 @@
 ## WHAT DOES THIS JAVASCRIPT DO
 
-- shows which theme is being used on any self-hosted/Atomic sites
+- shows which theme is being used on any self-hosted/Atomic sites (home page only, to keep things as light as possible)
 - gives you a direct link to the theme's *style.css* file, which will give you more information about the theme creator and where to get support
 
 ## REQUIREMENTS:
