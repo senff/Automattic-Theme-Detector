@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Theme Detektorrr
 // @namespace    http://tampermonkey.net/
-// @version      1.02
+// @version      1.03
 // @description  Shows the theme name in a non-WPcom site
 // @author       Senff
 // @require      https://code.jquery.com/jquery-1.12.4.js
@@ -13,7 +13,7 @@
 var $ = window.jQuery;
 
 function showThemeDetails() {
-    $('body').append('<div id="wp-no-themeinfo" style="opacity: 0.2; position: fixed; right: 0px; bottom:0; background: #016087; color: #ffffff; line-height:20px; padding: 0 10px; font-size: 11px; font-family: arial, helvetica; border-top: solid 1px #000000; border-left: solid 1px #000000; box-shadow: -1px -1px 0 #ffffff; z-index: 999999;"><em>Not a self-hosted WordPress site or theme can not be detected.</em></div>');
+    $('body').append('<div id="wp-no-themeinfo" style="opacity: 0.5; position: fixed; right: 0px; bottom:0; background: #016087; color: #ffffff; line-height:20px; padding: 0 10px; font-size: 11px; font-family: arial, helvetica; border-top: solid 1px #000000; border-left: solid 1px #000000; box-shadow: -1px -1px 0 #ffffff; z-index: 999999;"><em>Not a self-hosted WordPress site or theme can not be detected.</em></div>');
 
     $('link').each(function(link) {
         var linkHref = $(this).attr('href')
