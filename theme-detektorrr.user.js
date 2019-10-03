@@ -1,10 +1,9 @@
 // ==UserScript==
 // @name         Theme Detektorrr
 // @namespace    http://tampermonkey.net/
-// @version      1.03
+// @version      1.04
 // @description  Shows the theme name in a non-WPcom site
 // @author       Senff
-// @require      https://code.jquery.com/jquery-1.12.4.js
 // @updateURL    https://github.com/senff/Theme-Detektorrr/raw/master/theme-detektorrr.user.js
 // @match        *://*
 // @grant        none
