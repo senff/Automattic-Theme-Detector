@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Theme Detektorrr
 // @namespace    http://tampermonkey.net/
-// @version      1.04
+// @version      1.1
 // @description  Shows the theme name in a non-WPcom site
 // @author       Senff
 // @updateURL    https://github.com/senff/Theme-Detektorrr/raw/master/theme-detektorrr.user.js
@@ -16,7 +16,7 @@ function showThemeDetails() {
 
     $('link').each(function(link) {
         var linkHref = $(this).attr('href')
-        if (linkHref.includes('/themes/')) {
+        if (linkHref.includes('wp-content/themes/') && (linkHref.includes('/style.css'))) {
             var themeLoc = linkHref.indexOf("/themes/")+8; // the character position of where the theme name starts
             var themePath = linkHref.substring(0,themeLoc); // path of where the theme is installed
             var themeSplit = linkHref.substring(themeLoc); // substring with the theme name first
