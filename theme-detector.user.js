@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name         Theme Detektorrr
+// @name         Theme Detector
 // @namespace    http://tampermonkey.net/
 // @version      1.1
-// @description  Shows the theme name in a non-WPcom site
+// @description  Shows the theme name of a WordPress site
 // @author       Senff
-// @updateURL    https://github.com/senff/Theme-Detektorrr/raw/master/theme-detektorrr.user.js
+// @updateURL    https://github.com/senff/theme-detector/raw/master/theme-detector.user.js
 // @match        *://*
 // @grant        none
 // ==/UserScript==
@@ -12,7 +12,7 @@
 var $ = window.jQuery;
 
 function showThemeDetails() {
-    $('body').append('<div id="wp-no-themeinfo" style="opacity: 0.5; position: fixed; right: 0px; bottom:0; background: #016087; color: #ffffff; line-height:20px; padding: 0 10px; font-size: 11px; font-family: arial, helvetica; border-top: solid 1px #000000; border-left: solid 1px #000000; box-shadow: -1px -1px 0 #ffffff; z-index: 999999;"><em>Not a self-hosted WordPress site or theme can not be detected.</em></div>');
+    $('body').append('<div id="wp-no-themeinfo" style="opacity: 0.5; position: fixed; right: 0px; bottom:0; background: #016087; color: #ffffff; line-height:20px; padding: 0 10px; font-size: 11px; font-family: arial, helvetica; border-top: solid 1px #000000; border-left: solid 1px #000000; box-shadow: -1px -1px 0 #ffffff; z-index: 999999;"><em>Not a WordPress site or theme can not be detected.</em></div>');
 
     $('link').each(function(link) {
         var linkHref = $(this).attr('href')
